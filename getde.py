@@ -1,13 +1,21 @@
 #!/usr/bin/python
 
+# sudo apt-get install python3-bs4 python3-urllib
+# python3 getde.py 
+
 import re
 import urllib.request
 from bs4 import BeautifulSoup
 
-minTreshold = 0.6
-maxTreshold = 1.5
-allRegulatedGenes = []
+minTreshold = 0.35
+maxTreshold = 2.5
 AFHandle = open('list.acc', 'r')
+outHandle = open('output_' + str(minTreshold) + '_' + str(maxTreshold) + '.csv', 'w')
+
+
+
+allRegulatedGenes = []
+
 def visible(element):
 	if element.parent.name in ['style', 'script', '[document]', 'head', 'title']:
 		return False
@@ -29,6 +37,7 @@ class patientAnn():
 	upGenes = []
 	downGenes = []
 	age = 0
+	stage = ''
 	def __init__(self):
 		self.id = ''
 		self.normal = dataset()
@@ -36,6 +45,7 @@ class patientAnn():
 		self.age = 0
 		self.upGenes = []
 		self.downGenes = []
+		self.stage = ''
 		
 
 annotation = {}
@@ -43,31 +53,33 @@ annotation = {}
 #GSM494569	lung cancer	69	1A	97
 for line in AFHandle:
 	lspl = line.strip().split('\t')
-	if lspl[4] not in annotation:
-		annotation[lspl[4]] = patientAnn()
-		annotation[lspl[4]].id = lspl[4]
-		annotation[lspl[4]].age = lspl[2]
-		annotation[lspl[4]].upGenes = []
-		annotation[lspl[4]].downGenes = []
+	pId = int(lspl[4].strip())
+	if pId not in annotation:
+		annotation[pId] = patientAnn()
+		annotation[pId].id = pId
+		annotation[pId].age = lspl[2]
+		annotation[pId].upGenes = []
+		annotation[pId].downGenes = []
 	if lspl[1] == 'control':
-		if annotation[lspl[4]].normal.id != '':
+		if annotation[pId].normal.id != '':
 			print('Double normal')
-		annotation[lspl[4]].normal.id = lspl[0]
-		annotation[lspl[4]].normal.genes = {}
+		annotation[pId].normal.id = lspl[0]
+		annotation[pId].normal.genes = {}
 	else:
-		if annotation[lspl[4]].cancer.id != '':
+		if annotation[pId].cancer.id != '':
 			print('Double cancer')
-		annotation[lspl[4]].cancer.id = lspl[0]
-		annotation[lspl[4]].cancer.genes = {}
+		annotation[pId].cancer.id = lspl[0]
+		annotation[pId].cancer.genes = {}
+		annotation[pId].stage = lspl[3]
 AFHandle.close()
-outHandle = open('output.csv', 'w')
 #for patient in annotation.values():
-for pId in annotation:
+sortedPatients = sorted(annotation.keys())
+for pId in sortedPatients:
 	patient = annotation[pId]
 	print(patient.id, patient.normal.id, patient.cancer.id)
 
-	html1=urllib.request.urlopen('http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?view=data&acc=' + patient.normal.id).read()
-	soup = BeautifulSoup(html1)
+	html=urllib.request.urlopen('http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?view=data&acc=' + patient.normal.id).read()
+	soup = BeautifulSoup(html)
 	texts = soup.findAll(text=True)
 	visible_texts = filter(visible, texts)
 	for file in visible_texts:
@@ -83,8 +95,8 @@ for pId in annotation:
 					patient.normal.genes[gene] = expression
 					#print(gene, expression)
 
-	html2=urllib.request.urlopen('http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?view=data&acc=' + patient.cancer.id).read()
-	soup = BeautifulSoup(html2)
+	html=urllib.request.urlopen('http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?view=data&acc=' + patient.cancer.id).read()
+	soup = BeautifulSoup(html)
 	texts = soup.findAll(text=True)
 	visible_texts = filter(visible, texts)
 	for file in visible_texts:
@@ -103,35 +115,43 @@ for pId in annotation:
 		if gene not in patient.cancer.genes:
 			print('No ' + gene + ' in cancer')
 			continue
-		diff = patient.cancer.genes[gene]/ patient.normal.genes[gene]
+		diff = patient.cancer.genes[gene] / patient.normal.genes[gene]
 		if diff > maxTreshold:
 			patient.upGenes.append(gene)
-			allRegulatedGenes.append(gene)
+			if gene not in allRegulatedGenes:
+				allRegulatedGenes.append(gene)
 		elif diff < minTreshold:
 			patient.downGenes.append(gene)
-			allRegulatedGenes.append(gene)
+			if gene not in allRegulatedGenes:
+				allRegulatedGenes.append(gene)
 		#print(gene, patient.normal.genes[gene], patient.cancer.genes[gene], patient.cancer.genes[gene]/ patient.normal.genes[gene], sep = '\t', file=handle)
-#handle.close()
+	#handle.close()
 print('gene', end = '', file=outHandle)
-for pId in annotation:
-	print('\t' + pId, end = '', file=outHandle)
-print(file=outHandle)
+for pId in sortedPatients:
+	print('\t', pId, sep = '', end = '', file=outHandle)
+print('\tcountU\tcountD', file=outHandle)
+for pId in sortedPatients:
+	print('\t' + annotation[pId].age, end = '', file=outHandle)
+print('\t\t', file=outHandle)
+for pId in sortedPatients:
+	print('\t' + annotation[pId].stage, end = '', file=outHandle)
+print('\t\t', file=outHandle)
+allRegulatedGenes.sort()
 for gene in allRegulatedGenes:
+	countU = 0
+	countD = 0
 	print(gene, end = '', file=outHandle)
-	for pId in annotation:
+	for pId in sortedPatients:
 		patient = annotation[pId]
 		print('\t', end = '', file=outHandle)
 		if gene in patient.downGenes:
+			countD += 1
 			print('d', end = '', file=outHandle)
 		elif gene in patient.upGenes:
+			countU += 1
 			print('u', end = '', file=outHandle)
 		else:
 			print('-', end = '', file=outHandle)
-	print(file=outHandle)
-	
-	
-	
-	
-	
+	print('\t', countU, '\t', countD, sep = '', file=outHandle)
 	
 outHandle.close()
