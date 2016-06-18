@@ -1,0 +1,530 @@
+   ________ 17-healthy2008|16-H_F_kfsept
+ ,|
+ ||  ______ 17-healthy2008|08-H_W003_2
+ ||_|
+ |  |______ 17-healthy2008|08-H_W003_1
+ |
+ |    ________ 17-healthy2008|13-H_W09
+ |  ,|
+ |  || _______ 17-healthy2008|15-H_W10
+ |  |||
+ |  | |_______ 17-healthy2008|09-H_W06
+ |  |
+ |  |  _______ 17-healthy2008|06-H_W11
+ | ,|_|
+ | || |_______ 17-healthy2008|12-H_W08
+ | ||
+ | || _______ 17-healthy2008|10-H_W13_2
+ | |||
+ | | |_______ 17-healthy2008|10-H_W13_1
+ | | |
+ | | |  _____ 17-healthy2008|14-H_W15_1
+ | | |_|
+ |_|   |_____ 17-healthy2008|14-H_W15_2
+ | |   |
+ | |   | ____ 17-healthy2008|11-H_W14_1
+ | |   ||
+ | |    |____ 17-healthy2008|11-H_W14_2
+ | |
+ | |     _____ COPD2009|99214_none__peptideSummary
+ | | ___|
+ | ||   |_____ COPD2009|99214_1__peptideSummary
+ | ||
+ |  | ________ 17-healthy2008|07-H_2w
+ |  ||
+ |   |________ 17-healthy2008|02-H_2f
+ |   |
+ |   |________ 17-healthy2008|03-H_j4-human
+ |   |
+ |   | _______ 17-healthy2008|17-H_F_vksep_oktrepeat...
+ |   ||
+ |    |_______ 17-healthy2008|01-H_1f
+ |    |
+ |    | ______ 17-healthy2008|04-H_1w
+ |    ||
+ |     |______ 17-healthy2008|05-H_j5-human
+_|
+ |_________ Pneumo2014|KBB-JPR-pneumo_4-2-1_1
+ |
+ |  _______ COPD2009|412_none_1
+ |,|
+ ,||_______ COPD2009|412_none_2
+ ||
+ ||________ COPD2009|414_none_1
+ |
+ | ________ Pneumo2014|EBC-all_pneumo_99222_2
+ ||
+ ||      __ Pneumo2014|KBB-JPR-pneumo_4-2-2_1
+ ||_____|
+ ||     |__ Pneumo2014|KBB-JPR-pneumo_4-2-2_2
+ ||
+ ||________ COPD2009|315_none_1
+ ||
+ ||   ______ Tubes2010|EBC1
+ ||  |
+ || _| _____ Tubes2010|N5_1
+ ||| ||
+ ||| ||_____ Tubes2010|N4_1
+ ||| ||
+ |||  |_____ Tubes2010|N2_1
+ |||  |
+ |||  | ____ Tubes2010|N3_1
+ |||  ||
+ |||   |____ Tubes2010|N6_1
+ |||
+ |||________ COPD2009|413_none_1
+ |||
+ |||________ COPD2009|992110_none
+ |||
+ |||      _____ Pneumo2014|KBB-JPR-pneumo_3-2-17_2
+ |||    ,|
+ |||    ||_____ Pneumo2014|KBB-JPR-pneumo_3-2-17_1
+ |||   ,|
+ |||   ||______ Pneumo2014|KBB-JPR-pneumo_3-2-15_1
+ |||   ||
+ |||  ,||______ Pneumo2014|KBB-JPR-pneumo_3-2-15_2
+ |||  ||
+ |||  || ______ Pneumo2014|KBB-JPR-pneumo_3-2-16_2
+ |||  |||
+ |||  | |______ Pneumo2014|KBB-JPR-pneumo_3-2-16_1
+ |||  |
+ |||  |            ____ Cancer_8-onco2010|2_2
+ |||  |          ,|
+ |||  |          ||  __ Cancer_8-onco2010|6_2
+ |||  |          ||_|
+ |||  |         ,|  |__ Cancer_8-onco2010|6_1
+ |||  |         ||
+ |||  |         || ____ Cancer_8-onco2010|1_1
+ |||  |         |||
+ |||  |        _| |____ Cancer_8-onco2010|1_2
+ |||  |       | |
+ |||  |       | |    __ Cancer_8-onco2010|4_1
+ |||  |       | |  _|
+ |||  |       | | | |__ Cancer_8-onco2010|4_2
+ |||  |       | |_|
+ |||  |       |   | ___ Cancer_8-onco2010|3_2
+ |||  |       |   ||
+ |||  |      _|    |___ Cancer_8-onco2010|3_1
+ |||  |     | |    |
+ |||  |     | |    | __ Cancer_8-onco2010|5_1
+ |||  |     | |    ||
+ |||  |     | |     |__ Cancer_8-onco2010|5_2
+ |||__|     | |
+ |||  |     | |     ___ Cancer_8-onco2010|8_1
+ |||  |    _| |   _|
+ |||  |   | | |  | |___ Cancer_8-onco2010|8_2
+ |||  |   | | |__|
+ |||  |   | |    |  ___ Cancer_8-onco2010|7_2
+ |||  |   | |    |_|
+ |||  |   | |      |___ Cancer_8-onco2010|7_1
+ |||  |   | |
+ |||  | __| |     _ Cancer_44patient2014|11_1
+ |||  ||  | |____|
+ |||  ||  |      |_ Cancer_44patient2014|11_2
+ |||  ||  |
+ |||  ||  |      ___ Cancer_44patient2014|34_2
+ |||  ||  |   __|
+ |||  ||  |  |  |___ Cancer_44patient2014|34_1
+ |||  ||  |  |
+ |||  ||  |__|     ___ Cosmos2015-goodMSMS|2_2
+ |||  ||     |   _|
+ |||  ||     |  | |___ Cosmos2015-goodMSMS|2_1
+ |||  ||     |  |
+ |||  ||     |__|       _ Cancer_44patient2014|24_1
+ |||  ||        |   ___|
+ |||  ||        |  |   |_ Cancer_44patient2014|24_2
+ |||  ||        |  |
+ |||  ||        |__|     __ Pneumo2014|EBC-all_pneumo_99221_1
+ |||  ||           |   _|
+ |||  ||           |  | |__ Pneumo2014|EBC-all_pneumo_99221_2
+ |||  ||           |  |
+ |||   |           |__|   _ Pneumo2014|EBC-all_pneumo_99223_1
+ |||   |              | ,|
+ |||   |              | ||_ Pneumo2014|EBC-all_pneumo_99223_2
+ |||   |              |_|
+ |||   |                |__ Pneumo2014|EBC-all_pneumo_99224_2
+ |||   |                |
+ |||   |                |__ Pneumo2014|EBC-all_pneumo_99224_1
+ |||   |
+ |||   |      ____ Cosmos2015-goodMSMS|7_1
+ |||   |    _|
+ |||   |   | |____ Cosmos2015-goodMSMS|7_2
+ |||   |   |
+ |||   |  _|     ___ Cosmos2015-goodMSMS|9_2
+ |||   | | |   _|
+ |||   | | |  | |___ Cosmos2015-goodMSMS|9_1
+ |||   | | |__|
+ |||   | |    |  ___ Cosmos2015-goodMSMS|8_2
+ |||   | |    |_|
+ |||   |_|      |___ Cosmos2015-goodMSMS|8_1
+ |||     |
+ |||     |    ___ Cosmos2015-goodMSMS|6_1
+ |||     | __|
+ |||     ||  |___ Cosmos2015-goodMSMS|6_2
+ |||     ||
+ |||     || _____ Cancer_18-onco2011|3_2
+ |||     |||
+ |||      ||    ___ Cancer_18-onco2011|14_2
+ |||      ||  _|
+ |||      || | |___ Cancer_18-onco2011|14_1
+ |||      || |
+ |||       | |     ___ Cancer_18-onco2011|1_2
+ |||       | |   _|
+ |||       | |  | |___ Cancer_18-onco2011|1_1
+ |||       | |  |
+ |||       |_| ,|    __ Cancer_18-onco2011|8_1
+ |||         | ||  _|
+ |||         | || | |__ Cancer_18-onco2011|8_2
+ |||         | || |
+ |||         | ||_|   __ Cancer_18-onco2011|19_2
+ |||         | |  | ,|
+ |||         | |  | ||__ Cancer_18-onco2011|19_1
+  ||         | |  |_|
+  ||         |_|    |___ Cancer_18-onco2011|18_1
+  ||           |    |
+  ||           |    |___ Cancer_18-onco2011|18_2
+  ||           |
+  ||           |  ___ Cancer_18-onco2011|12_1
+  ||           |,|
+  ||           |||___ Cancer_18-onco2011|12_2
+  ||           ||
+  ||           ||  ___ Cancer_18-onco2011|13_1
+  ||            |,|
+  ||            |||___ Cancer_18-onco2011|13_2
+  ||            ||
+  ||            ||  __ Cancer_18-onco2011|10_2
+  ||             |,|
+  ||             |||__ Cancer_18-onco2011|10_1
+  ||             ||
+  ||              |___ Cancer_18-onco2011|11_2
+  ||              |
+  ||              |___ Cancer_18-onco2011|11_1
+  ||
+  ||  ______ COPD2009|411_none_1
+  || |
+  || |     __ COPD2009|411_Ets_1and2
+  || |   ,|
+  ||,|  ,||__ COPD2009|411_2
+  ||||  ||
+  |||| ,||___ COPD2009|411_1
+  |||| ||
+  ||||_||____ COPD2009|413_2
+  |||  |
+  |||  | ____ COPD2009|316_merged1-2
+  |||  ||
+  |||   |____ COPD2009|316_none_1
+  |||
+  |||_______ COPD2009|316_none_2
+  |||
+  ||| _______ COPD2009|313_none_2
+  ||||
+  ||||_______ COPD2009|313_none_1
+  | ,|
+  | ||_______ COPD2009|411_none_2
+  | ||
+  | || ______ COPD2009|315_none_2
+  | |||
+  | |||   ___ Pneumo2014|KBB-JPR-pneumo_4-2-4_2
+  | | | _|
+  | | || |___ Pneumo2014|KBB-JPR-pneumo_4-2-4_1
+  | |  |
+  | |  |_____ COPD2009|315_merged1-2
+  | |
+  | |_______ COPD2009|99212_none
+  | |
+  | |  ______ COPD2009|413_none_2
+  | | |
+  | | |   _____ COPD2009|3110_2
+  | |,| ,|
+  | ||| ||_____ COPD2009|3110_2_none
+  | ||| |
+  | ||| |       _ COPD2009|313_merged1-2
+  | |||_|   ___|
+  | ||  |  |   |_ COPD2009|313_Ets_1and2
+  | ||  | ,|
+  | ||  | || ____ COPD2009|99213_1
+  | ||  | |||
+  |  |  |_| |____ COPD2009|99212_1
+  |  |    |
+  |  |    |   __ COPD2009|413_1
+  |  |    |__|
+  |  |       |__ COPD2009|413_Ets_1and2
+  |  |
+  |  | ______ COPD2009|99217_none
+  |  ||
+  |   |______ COPD2009|99218_none
+  |
+  |_________ Cosmos2015-goodMSMS|3_2
+  |
+  |   _______ Cancer_18-onco2011|15_1
+  |  |
+  | ,| ______ Cancer_18-onco2011|15_2
+  | |||
+  | ||| _____ Cancer_18-onco2011|17_1
+  | | ,|
+  | | ||_____ Cancer_18-onco2011|17_2
+  | | |
+  | | |______ Cancer_18-onco2011|16_1
+  |_|
+  | |  ______ Cancer_18-onco2011|3_1
+  | | |
+  | |,|  _____ Cancer_18-onco2011|7_2
+  | ||| |
+  | ||| |_____ Cancer_18-onco2011|7_1
+  | |||_|
+  | ||  | ____ Cancer_18-onco2011|9_1
+  | ||  ||
+  |  |   |____ Cancer_18-onco2011|9_2
+  |  |
+  |  |   _____ Cancer_18-onco2011|4_1
+  |  | _|
+  |  || |_____ Cancer_18-onco2011|4_2
+  |  ||
+  |   |  _____ Cancer_18-onco2011|5_1
+  |   |,|
+  |   |||_____ Cancer_18-onco2011|5_2
+  |    |
+  |    |______ Cancer_18-onco2011|16_2
+  |
+  |      ______ COPD2009|414_1
+  |    ,|
+  |    ||  ____ Pneumo2014|KBB-JPR-pneumo_4-2-6_1
+  |    ||_|
+  |   _|  |____ Pneumo2014|KBB-JPR-pneumo_4-2-6_2
+  |  | |
+  |  | |   ____ COPD2009|412_2
+  |  | |__|
+  |  |    |    , COPD2009|412_1
+  | ,|    |____|
+  | ||         | COPD2009|412_Ets_1and2
+  | ||
+  | || _______ Pneumo2014|KBB-JPR-pneumo_4-2-3_2
+  | |||
+  | ||| ______ Pneumo2014|KBB-JPR-pneumo_4-2-3_1
+  | | ||
+  | | ||   ___ Pneumo2014|KBB-JPR-pneumo_4-2-5_2
+  | |  | _|
+  | |  || |___ Pneumo2014|KBB-JPR-pneumo_4-2-5_1
+  | |   |
+  | |   |_____ Pneumo2014|KBB-JPR-pneumo_4-2-1_2
+  | |
+  | |      ______ Cancer_18-onco2011|6_2
+  | |    ,|
+  | |    ||______ Cancer_18-onco2011|6_1
+  | |   _|
+  | |  | |   ____ Cancer_44patient2014|14_1
+  | |  | |__|
+  | |  |    |____ Cancer_44patient2014|14_2
+  | |  |
+  | |  |      ____ Cancer_44patient2014|3_2
+  | |  |   __|
+  | |  |  |  |____ Cancer_44patient2014|3_1
+  | |  | ,|
+  | |  | ||_______ Cancer_44patient2014|4_1
+  | |  | ||
+  | |  | || ______ Cancer_44patient2014|16_2
+  | | _| |||
+  | || | ||| _____ Cancer_44patient2014|16_1
+  | || | | ||
+  | || | | ||   __ Cancer_44patient2014|21_1
+  |_|| | |  | _|
+    || | |  || |__ Cancer_44patient2014|21_2
+    || | |   |
+    || | |   |____ Cancer_44patient2014|4_2
+    || | |
+    || | |    _____ Cancer_44patient2014|6_2
+    || | |   |
+    || | |  ,|   __ Cancer_44patient2014|22_2
+    || | |  || _|
+    || |_|  ||| |__ Cancer_44patient2014|22_1
+    ||   |  | |
+    ||   |  | |____ Cancer_44patient2014|6_1
+    ||   |  |
+    ||   | ,|  _____ Cancer_44patient2014|29_2
+    ||   | || |
+    ||   | || |_____ Cancer_44patient2014|29_1
+    ||   | || |
+    ||   | || |   ___ Cancer_44patient2014|23_2
+    ||   | || |  |
+    ||   | ||_| _| __ Cancer_44patient2014|8_1
+    ||   | |  || ,|
+    ||   | |  || ||__ Cancer_44patient2014|8_2
+    ||   | |  || |
+    ||   | |  || |___ Cancer_44patient2014|23_1
+    ||   | |  ||
+    ||   | |   |    ___ Cancer_44patient2014|20_1
+    ||   | |   |  _|
+    ||   |_|   | | |___ Cancer_44patient2014|20_2
+    ||     |   | |
+    ||     |   |_|  ____ Cancer_44patient2014|17_2
+    ||     |     |,|
+    ||     |     |||____ Cancer_44patient2014|17_1
+    ||     |     ||
+     |     |      |  ___ Cancer_44patient2014|13_2
+     |     |      |_|
+     |     |        |___ Cancer_44patient2014|13_1
+     |     |
+     |     |    ___ Cancer_44patient2014|5_2
+     |     | __|
+     |     ||  |___ Cancer_44patient2014|5_1
+     |     ||
+     |     ||  _____ Cancer_44patient2014|1_2
+     |      |,|
+     |      |||_____ Cancer_44patient2014|1_1
+     |      ||
+     |      ||   ____ Cosmos2015-goodMSMS|10_2
+     |       | ,|
+     |       | ||____ Cosmos2015-goodMSMS|10_1
+     |       |_|
+     |         | ____ Cancer_44patient2014|2_1
+     |         ||
+     |          |____ Cancer_44patient2014|2_2
+     |
+     |  _______ Cosmos2014-X|X2_1
+     | |
+     | |  ______ Cosmos2014-X|X8_1
+     |,| |
+     |||,|    __ Cosmos2014-X|X4_1
+     |||||  _|
+     |||||_| |__ Cosmos2014-X|X4_2
+     ||||  |
+     || |  |____ Cosmos2014-X|X8_2
+     || |
+     || |   ____ Cosmos2014-X|X1_1
+     || |__|
+     ||    |____ Cosmos2014-X|X1_2
+     ||
+     ||   ______ Cosmos2014-X|X2_2
+     || ,|
+     || ||______ Cosmos2014-X|X6_2
+      | |
+      | |      ____ Cancer_44patient2014|10_1
+      | |    ,|
+      | |    ||____ Cancer_44patient2014|10_2
+      | |    |
+      | |   ,| _____ Cancer_44patient2014|36_1
+      | |   |||
+      | |   |||_____ Cancer_44patient2014|36_2
+      | |   |||
+      | |   | |  ___ Cancer_44patient2014|15_1
+      | |  _| |_|
+      | | | |   |___ Cancer_44patient2014|15_2
+      | | | |
+      |_| | |  ____ Cosmos2014-X|X10_1
+        | | |,|
+        | | |||____ Cosmos2014-X|X10_2
+        | | ||
+        | |  |_____ Cosmos2014-X|X6_1
+        | |  |
+        | |  |  ___ Cosmos2014-X|X9_1
+        | |  |_|
+        | |    |___ Cosmos2014-X|X9_2
+        | |
+        | |       ___ Cosmos2014-X|X7_2
+        | |     _|
+        | |    | |___ Cosmos2014-X|X7_1
+        | |    |
+        | |   _|   ___ Cosmos2014-X|X3_1
+        |_|  | | ,|
+          |  | | ||___ Cosmos2014-X|X3_2
+          |  | |_|
+          |  |   |____ Cosmos2014-X|X5_1
+          |  |   |
+          |  |   |____ Cosmos2014-X|X5_2
+          |  |
+          |  |        ___ Cancer_44patient2014|40_2
+          |  |      _|
+          |  |     | |___ Cancer_44patient2014|40_1
+          |  |    _|
+          |  |   | |  ___ Cancer_44patient2014|30_2
+          |  |   | |_|
+          |  |   |   |___ Cancer_44patient2014|30_1
+          |  |   |
+          |  |  ,|  ____ Cancer_44patient2014|31_1
+          |  |  ||,|
+          |  |  ||||____ Cancer_44patient2014|12_1
+          |__|  ||||
+             |  ||||____ Cancer_44patient2014|12_2
+             |  ||||
+             |  | ||____ Cancer_44patient2014|31_2
+             | ,| |
+             | || |   __ Cancer_44patient2014|28_1
+             | || |__|
+             | ||    |__ Cancer_44patient2014|28_2
+             | ||
+             | ||  ____ Cancer_44patient2014|33_1
+             | || |
+             | ||_| ___ Cancer_44patient2014|33_2
+             | |  ,|
+             | |  ||___ Cancer_44patient2014|27_2
+             | |  |
+             | |  | ___ Cancer_44patient2014|27_1
+             | |  ||
+             | |   | __ Cancer_44patient2014|39_1
+             | |   ||
+             | |    |__ Cancer_44patient2014|39_2
+             |_|
+               |        _ Cancer_44patient2014|7_2
+               |    ___|
+               |   |   |_ Cancer_44patient2014|7_1
+               |   |
+               |  _|    ___ Cancer_44patient2014|19_1
+               | | |  ,|
+               | | |  ||___ Cancer_44patient2014|19_2
+               | | |__|
+               | |    |  __ Cancer_44patient2014|32_1
+               | |    |_|
+               | |      |__ Cancer_44patient2014|32_2
+               | |
+               | |    ___ Cancer_44patient2014|37_2
+               | |  ,|
+               | |  || __ Cancer_44patient2014|35_1
+               | |  |||
+               |_|  | |__ Cancer_44patient2014|35_2
+                 | _|
+                 || |   ___ Cancer_44patient2014|42_1
+                 || | _|
+                 || || |___ Cancer_44patient2014|42_2
+                 || ||
+                 || ||   ___ Cancer_44patient2014|41_2
+                 ||  | ,|
+                 ||  | ||___ Cancer_44patient2014|41_1
+                 ||  |_|
+                 ||    |  __ Cancer_44patient2014|26_2
+                 ||    |_|
+                 ||      |__ Cancer_44patient2014|26_1
+                  |
+                  |     ___ Cancer_44patient2014|9_2
+                  |   ,|
+                  |   ||___ Cancer_44patient2014|9_1
+                  |  _|
+                  | | | ___ Cancer_44patient2014|18_1
+                  | | ||
+                  | |  |___ Cancer_44patient2014|18_2
+                  | |
+                  | |     __ Cosmos2015-goodMSMS|1_2
+                  |_|   _|
+                    |  | |__ Cosmos2015-goodMSMS|1_1
+                    | ,|
+                    | || ___ Cosmos2015-goodMSMS|3_1
+                    | |||
+                    | | | __ Cosmos2015-goodMSMS|4_2
+                    | | ||
+                    |_|  |__ Cosmos2015-goodMSMS|4_1
+                      |
+                      |    __ Cancer_44patient2014|25_1
+                      |  _|
+                      | | |__ Cancer_44patient2014|25_2
+                      | |
+                      |_|   __ Cancer_44patient2014|43_1
+                        | _|
+                        || |__ Cancer_44patient2014|43_2
+                        ||
+                        ||  ___ Cancer_44patient2014|38_2
+                         | |
+                         | |___ Cancer_44patient2014|38_1
+                         |_|
+                           | __ Cancer_44patient2014|44_2
+                           ||
+                            |__ Cancer_44patient2014|44_1
+
