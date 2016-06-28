@@ -44,10 +44,14 @@ def draw_tree(tree):
 	# Phylo.draw_graphviz(tree)
 	# pylab.show()
 
+def output_tree(file_name, tree):
+	Phylo.write(tree, file_name, 'newick')
 
 def read_patients_input(input_file):
 	handle = open(input_file)
-	header = handle.next().split('\t')[1:-1]
+	header = handle.next().split('\t')[1:]
+	if header[-1] == 'Amount':
+		header = header[:-1]
 	#print(header)
 	result = dict()
 	for patient in header:
