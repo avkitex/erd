@@ -12,6 +12,9 @@ from Bio.Phylo import draw
 parser = argparse.ArgumentParser(prog='Clusterize.py', usage='%(prog)s [options]', description='description',
 								 epilog="\xa9 Avktex 2016")
 parser.add_argument('input', type=str, help='Input peptides.')
+parser.add_argument('-o', '--output', default='out_tree.newick', type=str, help='Output newick tree.')
+parser.add_argument('-t', '--output_ascii', default='out_tree_ascii.txt', type=str, help='Output newick tree.')
+parser.add_argument('-a', '--annotation', type=str, help='Annotation')
 args = parser.parse_args()
 
 def get_similarity_from_bit_vectors(bit_vectors):
@@ -39,19 +42,18 @@ def distance_matrix_to_tree(distance_matrix, method = "upgma"):
 	else:
 		return constructor.nj(distance_matrix)
 
-def draw_tree(tree):
-	Phylo.draw_ascii(tree)
-	# Phylo.draw_graphviz(tree)
-	# pylab.show()
+def output_asci_tree(file_name, tree):
+	with open(file_name, 'w') as handle:
+		Phylo.draw_ascii(tree, file=handle)
 
 def output_tree(file_name, tree):
 	Phylo.write(tree, file_name, 'newick')
 
 def read_patients_input(input_file):
 	handle = open(input_file)
-	header = handle.next().split('\t')[1:]
-	if header[-1] == 'Amount':
-		header = header[:-1]
+	header = handle.next().strip().split('\t')[1:]
+	if 'Amount' in header:
+		header.remove('Amount')
 	#print(header)
 	result = dict()
 	for patient in header:
@@ -76,9 +78,70 @@ def patient_params_to_vectors(patients_info_dict):
 		result[patient] = vector
 	return result
 
+class AnnotationBadFormat(Exception):
+
+	def __init__(self, message):
+		self.message = message
+
+	def __str__(self):
+		return 'AnnotationBadFormat ' + self.message
+
+
+class DoubleAnotation(Exception):
+
+	def __init__(self, message):
+		self.message = message
+
+	def __str__(self):
+		return 'DoubleAnotation ' + self.message
+
+def get_annotation(file_name):
+	try:
+		with open(file_name) as handle:
+			header = handle.next().strip().split('\t')
+			if 'ID' not in header:
+				raise AnnotationBadFormat('ID not found')
+			annotation = dict()
+			for line in handle:
+				entry = dict(zip(header, [x.strip() for x in line.split('\t')]))
+				if len(entry['ID'].strip()) > 0:
+					if entry['ID'] in annotation:
+						#print(entry['ID'], annotation[entry['ID']])
+						raise DoubleAnotation(entry['ID'])
+					annotation[entry['ID']] = entry
+			return annotation
+	except Exception as e:
+		print('There was error with parsing annotation ' + str(e))
+	return None
+
+def compose_annotation_id(sample):
+	return sample['Diagnosis'] + ':' + sample['Diagnosis_add'] + ':' + sample['Folder'] + ':' + sample['FIO'] + ':' + sample['Gender'] + ':' + sample['Age'] + ':[' + sample['ID'] + ']'
+
 patients_info = read_patients_input(args.input)
-patients_vectors = patient_params_to_vectors(patients_info)
-# for patient in patients_vectors:
-# 	print(patients_vectors[patient].ToBitString())
-distance_matrix = construct_distance_matrix(patients_vectors.keys(), patients_vectors.values())
-draw_tree(distance_matrix_to_tree(distance_matrix))
+samples_peptides_vectors_dict = patient_params_to_vectors(patients_info)
+# for patient in samples_peptides_vectors_dict:
+# 	print(samples_peptides_vectors_dict[patient].ToBitString())
+
+annotation = get_annotation(args.annotation)
+# for item in annotation:
+# 	print(compose_annotation_id(annotation[item]))
+
+sample_names = []
+sample_peptide_vectors = []
+for sample in samples_peptides_vectors_dict:
+	if annotation:
+		if sample in annotation:
+			sample_names.append(compose_annotation_id(annotation[sample]))
+		else:
+			print('There is no sample id ' + sample + ' in annotation')
+			sample_names.append(sample)
+	else:
+		sample_names.append(sample)
+	sample_peptide_vectors.append(samples_peptides_vectors_dict[sample])
+
+
+# print(len(sample_names), len(sample_peptide_vectors))
+distance_matrix = construct_distance_matrix(sample_names, sample_peptide_vectors)
+tree = distance_matrix_to_tree(distance_matrix)
+output_tree(args.output, tree)
+output_asci_tree(args.output_ascii, tree)
